@@ -1,0 +1,196 @@
+.job-card{
+position:relative;
+background:#fff;
+border-radius:18px;
+padding:22px;
+border:1px solid #e8edf2;
+transition:.3s;
+box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+
+.job-card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 35px rgba(10,102,194,.18);
+border-color:#0A66C2;
+}
+
+/* Bookmark */
+
+.bookmark-btn{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+width:40px;
+
+height:40px;
+
+border:none;
+
+border-radius:50%;
+
+background:#eef4ff;
+
+color:#0A66C2;
+
+cursor:pointer;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.bookmark-btn:hover{
+background:#0A66C2;
+color:white;
+}
+
+.bookmark-btn.saved{
+background:#0A66C2;
+color:white;
+}
+
+/* Header */
+
+.job-top{
+display:flex;
+gap:16px;
+align-items:center;
+}
+
+.job-top img{
+width:65px;
+height:65px;
+object-fit:contain;
+background:#f3f6f8;
+border-radius:12px;
+padding:8px;
+transition:.3s;
+}
+
+.job-card:hover img{
+transform:scale(1.05);
+}
+
+.job-header h3{
+margin:0;
+font-size:20px;
+}
+
+.company{
+margin-top:6px;
+font-weight:600;
+color:#0A66C2;
+}
+
+/* Description */
+
+.desc{
+margin:18px 0;
+line-height:1.6;
+color:#555;
+}
+
+/* Skills */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-bottom:18px;
+}
+
+.skills span{
+
+background:#eef4ff;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:600;
+
+color:#0A66C2;
+
+}
+
+/* Meta */
+
+.meta{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.meta span{
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+background:#f5f7fa;
+
+padding:7px 12px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+/* Extra */
+
+.extra{
+display:flex;
+justify-content:space-between;
+margin:18px 0;
+font-size:14px;
+color:#666;
+}
+
+.extra span{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+/* Apply */
+
+.apply-btn{
+width:100%;
+padding:13px;
+background:linear-gradient(135deg,#0A66C2,#004182);
+border:none;
+border-radius:30px;
+color:white;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.apply-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 24px rgba(10,102,194,.3);
+}
+
+@media(max-width:768px){
+
+.job-card{
+padding:18px;
+}
+
+.extra{
+flex-direction:column;
+gap:8px;
+}
+
+}

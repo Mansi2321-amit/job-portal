@@ -1,0 +1,11 @@
+# Backend
+Backend/SearchJob/target/
+
+# Frontend
+Frontend/frontend/node_modules/
+Frontend/frontend/build/
+Frontend/frontend/.env
+
+# System files
+.DS_Store
+*.log
